@@ -1,0 +1,42 @@
+---
+import { Img } from 'astro-imagetools/components';
+---
+
+<div class="w-[90%] mx-auto mb-[10px]">
+  <div>
+    <div>
+      <h1
+        class="text-three text-7xl font-title text-center pt-6 pb-4 font-bold">
+        Envueltos
+      </h1>
+      <h4 class="text-three text-xl leading-8">
+        Ingredientes:
+      </h4>
+      <ul class="ml-5 pb-[30px]">
+        <li class="list-disc text-three text-xl leading-8">
+          Maíz fresco
+        </li>
+        <li class="list-disc text-three text-xl leading-8">
+          Queso
+        </li>
+        <li class="list-disc text-three text-xl leading-8">
+          Huevos
+        </li>
+        <li class="list-disc text-three text-xl leading-8">
+          Mantequilla
+        </li>
+      </ul>
+    </div>
+    <Img
+      src="/src/Assets/Envueltos.jpg"
+      alt="Envueltos"
+    />
+  </div>
+  <p
+    class="text-three text-3xl font-title text-center pt-[30px] leading-8 font-bold">
+    £ 2 cada una <span class="hidden sm:inline">/</span
+    ><span
+      class="block h-[2px] w-[170px] mx-auto my-[5px] bg-three sm:hidden"
+    ></span> 12 x £ 20
+  </p>
+</div>

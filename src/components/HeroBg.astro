@@ -1,0 +1,26 @@
+---
+import { BackgroundImage } from 'astro-imagetools/components';
+import Hero from '../components/Hero';
+import { Img } from 'astro-imagetools/components';
+---
+
+<div class="lg:hidden">
+  <BackgroundImage
+    src="src/assets/Hero-mobile.jpg"
+    fit="contain"
+    quality={80}>
+    <div class="h-screen w-[100%] relative sm:h-[900px]">
+      <Hero client:load />
+    </div>
+  </BackgroundImage>
+</div>
+<div class="hidden lg:block">
+  <BackgroundImage
+    src="src/assets/Hero-desktop.jpg"
+    fit="contain"
+    quality={80}>
+    <div class="h-screen w-[100%] lg:h-[800px] relative">
+      <Hero client:load />
+    </div>
+  </BackgroundImage>
+</div>

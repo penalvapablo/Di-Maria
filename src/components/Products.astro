@@ -1,0 +1,46 @@
+---
+import { Img } from 'astro-imagetools/components';
+import Dulce from './Productos/Dulce.astro';
+import Envueltos from './Productos/Envueltos.astro';
+import Humitas from './Productos/Humitas.astro';
+import Tamales from './Productos/Tamales.astro';
+---
+
+<main
+  id="products"
+  class="bg-four pb-[50px]">
+  <h2
+    class="text-three text-5xl font-title text-center pt-12 pb-6 font-bold">
+    Productos
+  </h2>
+  <p
+    class="text-three text-center w-[90%] max-w-[728px] mx-auto text-xl leading-8">
+    Mis productos son el resultado de un arduo trabajo y
+    dedicación. Cada paso en la preparación se realiza con
+    mucho amor y atención a los detalles para garantizar la
+    máxima calidad, como me enseñó mi bella madre
+  </p>
+
+  <Humitas />
+  <Tamales />
+  <Envueltos />
+  <Dulce />
+
+  <p
+    class="text-three text-center w-[90%] max-w-[728px] mx-auto text-xl leading-8 mt-[50px]">
+    Me encuentro en Catford y ofrezco delivery gratuito en
+    las zonas 1, 2 y 3. Si está un poco más lejos, no se
+    preocupe, podemos organizarnos para llevar nuestros
+    productos a su puerta. ¡No dude en contactarnos para
+    hacer su pedido y disfrutar de mis productos en la
+    comodidad de su hogar!
+  </p>
+
+  <button>
+    <a
+      href="#"
+      class=""
+      >¡Haz tu pedido!</a
+    >
+  </button>
+</main>

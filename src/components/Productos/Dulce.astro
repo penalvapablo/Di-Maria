@@ -1,0 +1,28 @@
+---
+import { Img } from 'astro-imagetools/components';
+---
+
+<div class="w-[90%] mx-auto mb-[10px]">
+  <div>
+    <div>
+      <h1
+        class="text-three text-7xl font-title text-center pt-6 pb-4 font-bold">
+        Dulce de Leche
+      </h1>
+      <p class="text-three text-xl leading-8 pb-[30px]">
+        100% natural, sin colorantes ni conservantes.
+      </p>
+    </div>
+    <Img
+      src="/src/Assets/Dulce.jpg"
+      alt="Envueltos"
+    />
+  </div>
+  <p
+    class="text-three text-3xl font-title text-center pt-[30px] leading-8 font-bold">
+    £ 10 x 500ml <span class="hidden sm:inline">/</span
+    ><span
+      class="block h-[2px] w-[170px] mx-auto my-[5px] bg-three sm:hidden"
+    ></span> £ 5 x 250ml
+  </p>
+</div>
