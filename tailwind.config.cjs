@@ -11,6 +11,7 @@ module.exports = {
       two: '#0F938C',
       three: '#20707E',
       four: '#FFFDEE',
+      five: '#FFF6BF'
     },
     extend: {
       fontFamily: {
