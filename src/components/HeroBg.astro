@@ -4,19 +4,10 @@ import Hero from '../components/Hero';
 import { Image, Picture } from '@astrojs/image/components';
 ---
 
-<div class="lg:hidden h-screen relative">
-  <div class="absolute overflow-hidden bottom-1">
-    <Picture
-      alt="bg"
-      src="src/assets/Hero-mobile.jpg"
-      sizes="(min-width: 800px) 0"
-      widths={[400, 800]}
-      aspectRatio="749:1006"
-    />
-  </div>
+<!-- <div class="lg:hidden h-screen relative">
+  <div class="absolute h-screen tall:hidden"></div>
 
-  <!-- <Hero client:load /> -->
-  <!-- <BackgroundImage
+  <!-- <Hero client:load /> --><!-- <BackgroundImage
     src="src/assets/Hero-mobile.jpg"
     fit="contain"
     quality={80}>
@@ -24,7 +15,6 @@ import { Image, Picture } from '@astrojs/image/components';
       <Hero client:load />
     </div>
   </BackgroundImage> -->
-</div>
 <div class="hidden lg:block lg:h'600px">
   <!-- <BackgroundImage
     src="src/assets/Hero-desktop.jpg"
@@ -34,4 +24,4 @@ import { Image, Picture } from '@astrojs/image/components';
       <Hero client:load />
     </div>
   </BackgroundImage> -->
-</div>
+</div> -->

@@ -8,7 +8,10 @@ const Hero = () => {
   };
 
   return (
-    <div className="h-screen w-[100%] relative sm:h-[900px] bg-[url('src/Assets/Hero-mobile.jpg')] ">
+    <div
+      className="h-screen relative lg:h-[750px] landscape:h-[750px]
+      bg-[url('src/Assets/Hero-mobile.jpg')] lg:bg-[url('src/Assets/Hero-desktop.jpg')]  
+      bg-cover bg-center bg-no-repeat ">
       <Header heroTextBoxFn={heroTextBoxFn} />
       {heroTextBox && (
         <div className="">
@@ -18,7 +21,7 @@ const Hero = () => {
           <div className="max-[640px]:hidden absolute top-[20%] left-1/2 translate-x-[-50%] w-[450px]">
             <img src="/src/Assets/Logo-desktop.svg" />
           </div>
-          <p className=" absolute top-[75%] left-1/2 text-one translate-x-[-50%] font-paragraph text-2xl text-center w-[300px] sm:w-[400px] sm:text-3xl">
+          <p className=" absolute top-[75%] left-1/2 text-one translate-x-[-50%] font-paragraph text-2xl text-center w-[300px] sm:w-[400px] sm:text-3xl landscape:top-[85%]">
             Deliciosos sabores de la tierra, hechos con
             cariño por María.
           </p>
