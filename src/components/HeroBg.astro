@@ -1,25 +1,37 @@
 ---
 import { BackgroundImage } from 'astro-imagetools/components';
 import Hero from '../components/Hero';
+import { Image, Picture } from '@astrojs/image/components';
 ---
 
-<div class="lg:hidden">
-  <BackgroundImage
+<div class="lg:hidden h-screen relative">
+  <div class="absolute overflow-hidden bottom-1">
+    <Picture
+      alt="bg"
+      src="src/assets/Hero-mobile.jpg"
+      sizes="(min-width: 800px) 0"
+      widths={[400, 800]}
+      aspectRatio="749:1006"
+    />
+  </div>
+
+  <!-- <Hero client:load /> -->
+  <!-- <BackgroundImage
     src="src/assets/Hero-mobile.jpg"
     fit="contain"
     quality={80}>
     <div class="h-screen w-[100%] relative sm:h-[900px]">
       <Hero client:load />
     </div>
-  </BackgroundImage>
+  </BackgroundImage> -->
 </div>
 <div class="hidden lg:block lg:h'600px">
-  <BackgroundImage
+  <!-- <BackgroundImage
     src="src/assets/Hero-desktop.jpg"
     fit="contain"
     quality={80}>
     <div class="h-screen w-[100%] lg:h-[600px] relative">
       <Hero client:load />
     </div>
-  </BackgroundImage>
+  </BackgroundImage> -->
 </div>

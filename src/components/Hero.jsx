@@ -8,7 +8,7 @@ const Hero = () => {
   };
 
   return (
-    <>
+    <div className="h-screen w-[100%] relative sm:h-[900px] bg-[url('src/Assets/Hero-mobile.jpg')] ">
       <Header heroTextBoxFn={heroTextBoxFn} />
       {heroTextBox && (
         <div className="">
@@ -24,7 +24,7 @@ const Hero = () => {
           </p>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

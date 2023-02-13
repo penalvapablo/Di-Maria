@@ -4,7 +4,7 @@ export interface Props {
 }
 
 const { title } = Astro.props;
-import { ImageSupportDetection } from 'astro-imagetools/components';
+// import { ImageSupportDetection } from 'astro-imagetools/components';
 ---
 
 <!DOCTYPE html>
@@ -25,7 +25,7 @@ import { ImageSupportDetection } from 'astro-imagetools/components';
       content={Astro.generator}
     />
     <title>{title}</title>
-    <ImageSupportDetection />
+    <!-- <ImageSupportDetection /> -->
   </head>
   <body>
     <slot />
