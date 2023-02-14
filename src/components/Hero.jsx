@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <div
       className="h-screen relative lg:h-[750px] landscape:h-[750px]
-      bg-[url('/../src/Assets/Hero-mobile.jpg')] lg:bg-[url('/../src/Assets/Hero-desktop.jpg')]  
+      bg-[url('/Hero-mobile.jpg')] lg:bg-[url('/Hero-desktop.jpg')]  
       bg-cover bg-center bg-no-repeat ">
       <Header heroTextBoxFn={heroTextBoxFn} />
       {heroTextBox && (
