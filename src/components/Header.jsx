@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import NavMobile from './NavMobileHome';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import Nav from './Nav';
 
 const Header = ({ heroTextBoxFn }) => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -29,7 +30,7 @@ const Header = ({ heroTextBoxFn }) => {
             onClick={mobileNavFn}>
             <FontAwesomeIcon
               icon={faBars}
-              className="h-[35px] text-two text-end justify-items-end bg-one p-3 rounded-full"
+              className="h-[35px] text-three text-end justify-items-end bg-one p-3 rounded-full"
             />
           </button>
         </div>
@@ -40,6 +41,7 @@ const Header = ({ heroTextBoxFn }) => {
           mobileNavFn={mobileNavFn}
         />
       )}
+      <Nav />
     </>
   );
 };

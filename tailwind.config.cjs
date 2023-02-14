@@ -11,13 +11,9 @@ module.exports = {
       two: '#0F938C',
       three: '#20707E',
       four: '#FFFDEE',
-      five: '#FFF6BF',
+      five: '#16505B',
     },
     extend: {
-      // screens: {
-      //   tall: { raw: '(min-height: 800px)' },
-      //   // => @media (min-height: 800px) { ... }
-      // },
       fontFamily: {
         paragraph: [
           'Montserrat',

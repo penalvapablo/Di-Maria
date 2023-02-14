@@ -1,18 +1,20 @@
 ---
-import { Img } from 'astro-imagetools/components';
+import { Image } from '@astrojs/image/components';
 ---
 
-<div class="w-[90%] mx-auto mb-[10px]">
-  <div>
-    <div>
+<div
+  class="w-[90%] mx-auto mb-[10px] xl:w-[100%] xl:mb-[0]">
+  <div
+    class="xl:flex items-center xl:mt-[100px] xl:w-[1200px] xl:mx-auto">
+    <div class="max-w-[614px] mx-auto xl:w-[600px]">
       <h1
-        class="text-three text-7xl font-title text-center pt-6 pb-4 font-bold">
+        class="text-three text-7xl font-title text-center pt-6 pb-4 font-bold md:text-9xl xl:text-left xl:pt-0">
         Envueltos
       </h1>
       <h4 class="text-three text-xl leading-8">
         Ingredientes:
       </h4>
-      <ul class="ml-5 pb-[30px]">
+      <ul class="ml-5 pb-[30px] xl:pb-0">
         <li class="list-disc text-three text-xl leading-8">
           Maíz fresco
         </li>
@@ -27,13 +29,17 @@ import { Img } from 'astro-imagetools/components';
         </li>
       </ul>
     </div>
-    <Img
-      src="/src/Assets/Envueltos.jpg"
+    <Image
       alt="Envueltos"
+      src="/src/Assets/Envueltos.jpg"
+      width={614}
+      height={410}
+      quality={100}
+      class="mx-auto"
     />
   </div>
   <p
-    class="text-three text-3xl font-title text-center pt-[30px] leading-8 font-bold">
+    class="text-three text-3xl font-title text-center pt-[30px] leading-8 font-bold sm:text-4xl">
     £ 2 cada una <span class="hidden sm:inline">/</span
     ><span
       class="block h-[2px] w-[170px] mx-auto my-[5px] bg-three sm:hidden"

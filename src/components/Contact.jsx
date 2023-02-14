@@ -1,12 +1,14 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 const Contact = () => {
   return (
-    <section className="bg-four" id="contact">
-      <h2 className="text-three text-6xl font-title text-center pt-12 pb-6 font-bold">
-        Contact
+    <section
+      className="bg-four"
+      id="contact">
+      <h2 className="text-three text-6xl font-title text-center pt-12 pb-6 font-bold md:text-7xl">
+        Contacto
       </h2>
       <div className="mx-auto mb-[50px] flex h-[150px] w-fit flex-col items-start justify-around">
         <div className="flex items-center gap-5">
@@ -28,14 +30,15 @@ const Contact = () => {
               href="https://api.whatsapp.com/send?phone=491785279833"
               rel="noreferrer"
               target="_blank"
-              className="duration-100 hover:text-[20px]"
-            >
+              className="duration-100 hover:text-[20px]">
               +447533726042
             </a>
           </button>
         </div>
       </div>
-      <p className="text-three text-center font-paragraph">Todos los derechos reservados 2022  - D’ María</p>
+      <p className="text-three text-center font-paragraph">
+        Todos los derechos reservados 2022 - D’ María
+      </p>
     </section>
   );
 };

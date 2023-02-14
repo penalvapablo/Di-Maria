@@ -1,25 +1,32 @@
 ---
-import { Img } from 'astro-imagetools/components';
+import { Image } from '@astrojs/image/components';
 ---
 
-<div class="w-[90%] mx-auto mb-[10px]">
-  <div>
-    <div>
+<div
+  class="w-[90%] mx-auto mb-[10px] xl:w-[100%] xl:mb-[0]">
+  <div
+    class="xl:flex xl:flex-row-reverse items-center xl:mt-[100px] xl:w-[1200px] xl:mx-auto">
+    <div class="max-w-[614px] mx-auto xl:w-[500px]">
       <h1
-        class="text-three text-7xl font-title text-center pt-6 pb-4 font-bold">
+        class="text-three text-7xl font-title text-center pt-6 pb-4 font-bold md:text-9xl xl:text-left xl:pt-0">
         Dulce de Leche
       </h1>
-      <p class="text-three text-xl leading-8 pb-[30px]">
+      <p
+        class="text-three text-xl leading-8 pb-[30px] xl:pb-0">
         100% natural, sin colorantes ni conservantes.
       </p>
     </div>
-    <Img
+    <Image
+      alt="Dulce"
       src="/src/Assets/Dulce.jpg"
-      alt="Envueltos"
+      width={614}
+      height={410}
+      quality={100}
+      class="mx-auto"
     />
   </div>
   <p
-    class="text-three text-3xl font-title text-center pt-[30px] leading-8 font-bold">
+    class="text-three text-3xl font-title text-center pt-[30px] leading-8 font-bold sm:text-4xl">
     £ 10 x 500ml <span class="hidden sm:inline">/</span
     ><span
       class="block h-[2px] w-[170px] mx-auto my-[5px] bg-three sm:hidden"

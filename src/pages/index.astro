@@ -1,6 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import HeroBg from '../components/HeroBg.astro';
 import Products from '../components/Products.astro';
 import About from '../components/About.astro';
 import Contact from '../components/Contact';
@@ -8,9 +7,8 @@ import Hero from '../components/Hero';
 ---
 
 <Layout title="D' María">
-  <!-- <HeroBg /> -->
   <Hero client:load />
-  <!-- <Products /> -->
+  <Products />
   <About />
   <Contact />
 </Layout>

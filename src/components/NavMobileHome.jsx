@@ -4,14 +4,14 @@ const NavMobile = ({ mobileNavFn }) => {
       <ul className="h-[100%] max-h-[300px] flex flex-col items-center text-center justify-around">
         <li>
           <a
-            className="text-one text-2xl tracking-wider font-title  font-bold text-navLinks"
+            className="text-one text-2xl tracking-wider font-paragraph text-navLinks"
             href="/">
             Home
           </a>
         </li>
         <li>
           <a
-            className="text-one text-2xl tracking-wider font-title  font-bold text-navLinks "
+            className="text-one text-2xl tracking-wider font-paragraph text-navLinks "
             href="#products"
             onClick={mobileNavFn}>
             Productos
@@ -19,7 +19,7 @@ const NavMobile = ({ mobileNavFn }) => {
         </li>
         <li>
           <a
-            className="text-one text-2xl tracking-wider font-title  font-bold text-navLinks "
+            className="text-one text-2xl tracking-wider font-paragraph text-navLinks "
             href="#about"
             onClick={mobileNavFn}>
             {' '}
@@ -28,8 +28,8 @@ const NavMobile = ({ mobileNavFn }) => {
         </li>
         <li>
           <a
-            className="text-one text-2xl tracking-wider font-title  font-bold text-navLinks "
-            href="#contacto"
+            className="text-one text-2xl tracking-wider font-paragraph text-navLinks "
+            href="#contact"
             onClick={mobileNavFn}>
             Contacto
           </a>
