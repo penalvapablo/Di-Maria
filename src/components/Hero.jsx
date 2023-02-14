@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Header from './Header';
+import logoMobile from '../Assets/Logo-mobile.svg';
 
 const Hero = () => {
   const [heroTextBox, setHeroTextBox] = useState(true);
@@ -16,9 +17,7 @@ const Hero = () => {
       {heroTextBox && (
         <div className="">
           <div className="absolute top-[20%] left-1/2 translate-x-[-50%] w-[350px] md:hidden">
-            <img
-              src={import('../Assets/Logo-mobile.svg')}
-            />
+            <img src={logoMobile} />
           </div>
           <div className="max-[768px]:hidden absolute top-[20%] left-1/2 translate-x-[-50%] w-[450px]">
             <img src="src/Assets/Logo-desktop.svg" />
