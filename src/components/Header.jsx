@@ -23,14 +23,14 @@ const Header = ({ heroTextBoxFn }) => {
       <div className="relative z-10 lg:hidden">
         <div
           id="burger"
-          className="absolute top-7 right-10 ">
+          className="absolute top-7 right-10">
           <button
             id="burger menu"
             aria-label="burger menu"
             onClick={mobileNavFn}>
             <FontAwesomeIcon
               icon={faBars}
-              className="h-[35px] text-three text-end justify-items-end bg-one p-3 rounded-full"
+              className="h-[35px] w-[35px] text-three text-end justify-items-end bg-one p-3 rounded-full"
             />
           </button>
         </div>

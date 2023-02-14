@@ -27,7 +27,7 @@ const Contact = () => {
           />
           <button className="font-paragraph text-xl font-semibold text-three ">
             <a
-              href="https://api.whatsapp.com/send?phone=491785279833"
+              href="https://api.whatsapp.com/send?phone=447533726042"
               rel="noreferrer"
               target="_blank"
               className="duration-100 hover:text-[20px]">

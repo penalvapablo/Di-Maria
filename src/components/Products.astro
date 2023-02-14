@@ -1,5 +1,4 @@
 ---
-import { Img } from 'astro-imagetools/components';
 import Dulce from './Productos/Dulce.astro';
 import Envueltos from './Productos/Envueltos.astro';
 import Humitas from './Productos/Humitas.astro';
@@ -27,7 +26,7 @@ import Tamales from './Productos/Tamales.astro';
   <Dulce />
 
   <p
-    class="text-three text-center w-[90%] max-w-[728px] mx-auto text-xl leading-8 mt-[50px] xl:mt-[100px]">
+    class="text-three text-center w-[90%] max-w-[728px] mx-auto text-xl leading-8 mt-[50px] xl:mt-[100px] duration-1000">
     Me encuentro en Catford y ofrezco delivery gratuito en
     las zonas 1, 2 y 3. Si está un poco más lejos, no se
     preocupe, podemos organizarnos para llevar nuestros
@@ -37,11 +36,29 @@ import Tamales from './Productos/Tamales.astro';
   </p>
 
   <button
-    class="block my-[50px] py-[12px] h-fit w-[90%] mx-auto bg-three max-w-[400px] rounded-full sm:w-[250px] hover:bg-five duration-200">
+    class="animate-bounce block my-[50px] py-[12px] h-fit w-[90%] mx-auto bg-three max-w-[400px] rounded-full sm:w-[250px] hover:bg-five duration-200">
     <a
-      href="#"
+      href="https://api.whatsapp.com/send?phone=447533726042"
+      rel="noreferrer"
+      target="_blank"
       class="text-one leading-8 text-center text-2xl font-medium"
       >¡Haz tu pedido!</a
     >
   </button>
 </main>
+<script>
+  // const text = window.document.getElementsByTagName('p');
+  // console.log(text[8]);
+
+  // const observer = new IntersectionObserver((entries) => {
+  //   entries.forEach((entry) => {
+  //     if (entry.isIntersecting) {
+  //       entry.target.classList.remove('-translate-x-56');
+  //     } else {
+  //       entry.target.classList.add('-translate-x-56');
+  //     }
+  //   });
+  // });
+
+  // observer.observe(text[8]);
+</script>
