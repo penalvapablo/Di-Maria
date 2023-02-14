@@ -21,12 +21,16 @@ const Hero = () => {
             <img
               src={logoMobile}
               alt="Logo Mobile View"
+              width={350}
+              height={350}
             />
           </div>
           <div className="max-[768px]:hidden absolute top-[20%] left-1/2 translate-x-[-50%] w-[450px]">
             <img
               src={logoDesktop}
               alt="Logo Desktop View"
+              width={450}
+              height={450}
             />
           </div>
           <p className=" absolute top-[75%] left-1/2 text-one translate-x-[-50%] font-paragraph font-normal text-2xl text-center w-[300px] sm:w-[400px] landscape:top-[85%] md:top-[85%]">
