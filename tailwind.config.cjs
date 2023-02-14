@@ -19,7 +19,7 @@ module.exports = {
           'Montserrat',
           ...defaultTheme.fontFamily.sans,
         ],
-        title: ['Yeseva One', 'cursive'],
+        title: ['Yeseva One', 'serif'],
       },
     },
   },
