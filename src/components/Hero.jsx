@@ -18,10 +18,16 @@ const Hero = () => {
       {heroTextBox && (
         <div className="">
           <div className="absolute top-[20%] left-1/2 translate-x-[-50%] w-[350px] md:hidden">
-            <img src={logoMobile} />
+            <img
+              src={logoMobile}
+              alt="Logo Mobile View"
+            />
           </div>
           <div className="max-[768px]:hidden absolute top-[20%] left-1/2 translate-x-[-50%] w-[450px]">
-            <img src={logoDesktop} />
+            <img
+              src={logoDesktop}
+              alt="Logo Desktop View"
+            />
           </div>
           <p className=" absolute top-[75%] left-1/2 text-one translate-x-[-50%] font-paragraph font-normal text-2xl text-center w-[300px] sm:w-[400px] landscape:top-[85%] md:top-[85%]">
             Deliciosos sabores de la tierra, hechos con
