@@ -1,5 +1,6 @@
 ---
 import { Image } from '@astrojs/image/components';
+import Envueltos from '../../Assets/Envueltos.jpg';
 ---
 
 <div
@@ -30,7 +31,7 @@ import { Image } from '@astrojs/image/components';
       </ul>
     </div>
     <Image
-      alt="Envueltos"
+      alt={Envueltos}
       src="/src/Assets/Envueltos.jpg"
       width={614}
       height={410}
