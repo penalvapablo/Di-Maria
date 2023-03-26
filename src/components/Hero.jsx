@@ -11,9 +11,9 @@ const Hero = () => {
 
   return (
     <div
-      className="h-screen relative lg:h-[750px] landscape:h-[750px]
-      bg-[url('/Hero-mobile.jpg')] lg:bg-[url('/Hero-desktop.jpg')]  
+      className="h-[700px] min-h-[600px] relative lg:h-[700px] bg-[url('/Hero-mobile.jpg')] lg:bg-[url('/Hero-desktop.jpg')]  
       bg-cover bg-center bg-no-repeat ">
+      {/* <Image /> */}
       <Header heroTextBoxFn={heroTextBoxFn} />
       {heroTextBox && (
         <div className="">
@@ -25,7 +25,7 @@ const Hero = () => {
               height={350}
             />
           </div>
-          <div className="max-[768px]:hidden absolute top-[20%] left-1/2 translate-x-[-50%] w-[450px]">
+          <div className="max-[767px]:hidden absolute top-[20%] left-1/2 translate-x-[-50%] w-[450px]">
             <img
               src={logoDesktop}
               alt="Logo Desktop View"
