@@ -1,24 +1,41 @@
+---
+import { Image } from '@astrojs/image/components';
+import Maria from '../Assets/Maria.jpg';
+---
+
 <section
   id="about"
-  class="bg-three">
+  class="bg-three pb-14">
   <h2
-    class="text-four text-6xl font-title text-center py-[50px] font-bold md:text-7xl">
+    class="text-four text-6xl font-title text-center py-14 font-bold md:text-7xl">
     Sobre mi
   </h2>
-  <p
-    class="text-four w-[90%] max-w-[810px] mx-auto text-xl leading-8 pb-[50px]">
-    Mi nombre es María E Carrión Rueda. Soy de Macara-Loja,
-    Ecuador. Tengo 42 años y desde muy pequeña he ido
-    aprendiendo los secretos de la cocina de mi país,
-    transmitidos a través de mi familia a lo largo de varias
-    generaciones. Mis productos son 100% hechos en casa con
-    los más altos estándares de calidad, tanto en los
-    ingredientes como en su elaboración. Doy gracias a Dios
-    y a mi familia (en especial a mis dos niñas, que son mi
-    inspiración) por apoyarme y así poco a poco a sacar
-    adelante este emprendimiento desde sus comienzos allá
-    por el año 2020, también agradezco a toda mi gente linda
-    que confió en mis productos desde el primer día,
-    recomendándolos a sus familiares, amigos y conocidos.
-  </p>
+  <div
+    class="flex flex-col gap-12 xl:flex-row max-w-[1200px] xl:gap-0 justify-between mx-auto items-center">
+    <Image
+      alt="Envueltos"
+      src={Maria}
+      width={500}
+      height={550}
+      quality={100}
+      class="mx-auto rounded-xl w-[90%] max-w-[500px]"
+    />
+    <p
+      class="text-four w-[90%] max-w-[500px] mx-auto text-xl leading-8 pb-[50px]">
+      Mi nombre es María E Carrión Rueda. Soy de
+      Macara-Loja, Ecuador. Tengo 42 años y desde muy
+      pequeña he ido aprendiendo los secretos de la cocina
+      de mi país, transmitidos a través de mi familia a lo
+      largo de varias generaciones. Mis productos son 100%
+      hechos en casa con los más altos estándares de
+      calidad, tanto en los ingredientes como en su
+      elaboración. Doy gracias a Dios y a mi familia (en
+      especial a mis dos niñas, que son mi inspiración) por
+      apoyarme y así poco a poco a sacar adelante este
+      emprendimiento desde sus comienzos allá por el año
+      2020, también agradezco a toda mi gente linda que
+      confió en mis productos desde el primer día,
+      recomendándolos a sus familiares, amigos y conocidos.
+    </p>
+  </div>
 </section>
