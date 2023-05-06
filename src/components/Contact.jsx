@@ -37,7 +37,17 @@ const Contact = () => {
         </div>
       </div>
       <p className="text-three text-center font-paragraph">
-        Todos los derechos reservados 2022 - D’ María
+        Todos los derechos reservados 2022 - D’ María{' '}
+        <br className="sm:hidden" />{' '}
+        <span className="hidden sm:inline"> - </span>{' '}
+        Desarrollado por{' '}
+        <a
+          href="https://penalva-portfolio.vercel.app/"
+          target="_blank"
+          aria-label="link a portfolio"
+          className="border-b">
+          Pablo
+        </a>
       </p>
     </section>
   );
