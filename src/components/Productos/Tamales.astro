@@ -1,6 +1,6 @@
 ---
 import { Image } from '@astrojs/image/components';
-import Tamales from '../../Assets/Tamales.jpg';
+import tamales from '../../Assets/Tamales.jpg';
 ---
 
 <div
@@ -45,7 +45,7 @@ import Tamales from '../../Assets/Tamales.jpg';
     <div class="xl:w-[550px]">
       <Image
         alt="Tamales"
-        src={Tamales}
+        src={tamales}
         width={614}
         height={410}
         quality={100}
@@ -53,9 +53,17 @@ import Tamales from '../../Assets/Tamales.jpg';
       />
     </div>
   </div>
+
+  <!-- SIN PROMO -->
+  <p
+    class="text-three text-4xl font-title text-center pt-[30px] leading-8 font-bold sm:text-4xl">
+    £ 2 cada uno
+  </p>
+
+  <!-- CON PROMO -->
   <!-- <p
     class="text-three text-3xl font-title text-center pt-[30px] leading-8 font-bold sm:text-4xl">
-    £ 2 cada una <span class="hidden sm:inline">/</span
+    £ 2 cada uno <span class="hidden sm:inline">/</span
     ><span
       class="block h-[2px] w-[170px] mx-auto my-[5px] bg-three sm:hidden"
     ></span> 11 x £ 20
