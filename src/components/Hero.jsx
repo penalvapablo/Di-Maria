@@ -3,6 +3,7 @@ import Header from './Header';
 import logoMobile from '../Assets/Logo-mobile.svg';
 import logoDesktop from '../Assets/Logo-desktop.svg';
 
+
 const Hero = () => {
   const [heroTextBox, setHeroTextBox] = useState(true);
   const heroTextBoxFn = () => {
@@ -20,7 +21,7 @@ const Hero = () => {
           <div className="absolute top-[20%] left-1/2 translate-x-[-50%] w-[350px] md:hidden">
             <img
               src={logoMobile}
-              alt="Logo Mobile View"
+              alt="Logo Mobile Vie"
               width={350}
               height={350}
             />

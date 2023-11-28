@@ -4,13 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import Nav from './Nav';
 
-const Header = ({ heroTextBoxFn }) => {
+const Header = () => {
   const [mobileNav, setMobileNav] = useState(false);
   const mobileNavFn = () => {
     setMobileNav(!mobileNav);
-    if (heroTextBoxFn != null) {
-      heroTextBoxFn();
-    }
+
   };
   // Preven scrolling when mobile nav activated
   if (typeof window !== 'undefined') {
